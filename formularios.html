@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários em HTML</title>
+</head>
+<body>
+    <main>
+
+     <h1>Formulário</h1>
+     <!-- linha de sepração -->
+     <hr>
+     <br>
+     <!-- cria formulario -->
+        <form action="">
+            <div>
+                <!-- representa uma legenda para melhorar a acessibilidade de um item de interface do usuário -->
+                <label for="texto">Nome:</label>
+                <!-- atributos input 
+                 placeholder -- coloca uma legenda dentro da caixa do forms para auxiliar o usuario
+                 value       -- define o valor que se inicia o input, por padrão sempre aparece
+                 name        -- 
+                -->
+                <input type="text" id="texto" name="nome">
+            </div>
+            <!-- tag input para senha -->
+            <div>
+                <label for="Senha">Senha:</label>
+                <input type="password" id="senha" name="senha">
+
+            </div>
+            <br>
+              <!-- tag input para email -->
+            <div>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email">
+
+            </div>
+            <br>
+            <div>
+                <!-- tag input para data -->
+                <label for="data">Data de Nascimento:</label>
+                <input type="date"  id="data" name="data">
+
+            </div>
+            <br>
+            <div>
+                <!-- tag input para data -->
+                <label for="hora">Horário:</label>
+                <input type="time" id="hora" name="hora">
+
+            </div>
+            <br>
+            <div>
+                <!-- tag input para numero,  so aceita numeros -->
+                <label for="numero">Número:</label>
+                <input type="number" id="numero" name="numero">
+
+            </div>
+            <br>
+            <div>
+                <!-- tag input para arquivo,  so aceita arquivos -->
+                <label for="arquivo">Arquivo:</label>
+                <input type="file" id="arquivo" name="arquivo">
+
+            </div>
+            <br>
+            <div>
+                <!-- tag input para url,  semanticamente melhor para urls -->
+                <label for="urls">URL:</label>
+                <input type="url" id="urls" name="urls">
+
+            </div>
+             <br>
+            <div>
+                <!-- tag input para cor,  define dentro da input uma cor -->
+                <label for="cor">Cor:</label>
+                <input type="color" id="cor " name="cor">
+
+            </div>
+             <br>
+            <div>
+                <!-- tag input range,  define um range para o usurio escolher, vem normalmente de 0 a 100, mas posso alterar o max ou min, e também o valor inicial com value -->
+                <label for="range">Range:</label>
+                <input type="range" id="range " name="range" value="50" max="100" min="0">
+
+            </div>
+            <br>
+            <div>
+                <!-- tag input para uma checkbox,  define uma checkbox para o usuario,
+                 podendo deixar préviamente marcada  com a checked-->
+                <label for="checkbox">checbox:</label>
+                <input type="checkbox" id="checkbox " name="checkbox" checked>
+                <input type="checkbox" id="checkbox " name="checkbox" checked>
+
+
+            </div>
+             <br>
+             <div>
+                <!-- tag input para uma radio,  define uma checkbox para o usuario porém ela só deixa selecionar uma das opções, podendo tabém deixar préviamente marcada uma delas  com a checked-->
+                <label for="radio">Input:</label>
+                <input type="radio" id="radio " name="radio" checked>
+                <input type="radio" id="radio " name="radio">
+
+
+            </div>
+             <br>
+             <div>
+                <!-- tag input para resetar as informações dos inputs,  redefine tudo, pode alterar o nome que vai dentro do botão com value -->
+                <label for="reset">Reset:</label>
+                <input type="reset" id="reset " name="reset" value="Limpar">
+
+            </div>
+             <br>
+             <div>
+                <!-- tag input para envia,  define dentro da input uma cor -->
+                <!-- <label for="enviar">enviar:</label> -->
+                <input type="submit" id="enviar " name="enviar" value="ENVIAR">
+
+            </div>
+             <br>
+             <!-- um modo de fazer uma caixa de texto, podendo servir pra digitar texto grandes, podendo definir tamanhp com cols e rows-->
+            <textarea name="bio" id="bio" cols="30" rows="10"></textarea>
+            <br><br>
+
+
+            <select name="select" id="select">
+                 <!-- opções do select, podendo ter uma opção de informação para o usuario usando o disable e selected-->
+                 <option value="" disabled selected>Selecione uma das opções</option>
+
+                <option value="receita">Receita</option>
+                <option value="lazer">Lazer</option>
+                <option value="refeição">Refeição</option>
+
+            </select>
+
+            <br>
+
+
+
+            
+           
+
+        </form>
+    </main>
+    
+</body>
+</html>
