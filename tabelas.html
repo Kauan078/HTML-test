@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas HTML</title>
+</head>
+<body>
+    <main>
+
+        <h1>Tabelas HTML</h1>
+
+       <section id="students"> 
+        <h2>Tabela de Alunos</h2>
+        
+         <!-- criar tabela -->
+          <table border="3">
+            <!-- defini o cabeçalho da tabela -->
+             <thead>
+                 <!-- cria uma linha na tabela utilizando th -->
+                <tr>
+                    <!-- colunas -->
+                    <th>Nome</th>
+                    <th>Email</th>
+                    <th>Matrícula</th>
+                    
+                </tr>
+             </thead>
+
+             <tbody>
+                <!-- dentro do tbody sempre usar o td, e no thead sempre th -->
+                <tr>
+                    <td>Gabriel</td>
+                    <td>Gabriel@gmail.com</td>
+                    <td>1</td>
+                </tr>
+
+                <tr>
+                    <td>raphael</td>
+                    <td>raphael@gmail.com</td>
+                    <td>2</td>
+                </tr>
+
+                <tr>
+                    <td>luiza</td>
+                    <td>luiza@gmail.com</td>
+                    <td>3</td>
+                </tr>
+             </tbody>
+          </table>
+
+
+
+
+
+       </section>
+
+       <section id="Finance">
+        <h2>Tabela de Controle Financeiro</h2>
+         <table border="1">
+           <thead>
+
+              <tr>
+               <th>Data</th>
+               <th>Tipo</th>
+               <th>Descrição</th>
+               <th>Valor</th>
+              </tr>
+
+           </thead>
+           
+           <tbody>
+
+            <tr>
+                <!-- rowspan mescla as linhas de uma coluna -->
+                 <!-- colspan mescla as colunas de um linha -->
+                <td rowspan="2">15/04/2024</td>
+                <td colspan="2">Despesa</td>
+                <!-- <td>Almoço</td> -->
+                <td>R$ 35,00</td>
+
+            </tr>
+
+            <tr>
+                
+                <td>Receita</td>
+                <td>Salário</td>
+                <td>R$ 3500,00</td>
+
+            </tr>
+
+
+            <tr>
+                <td>30/08/2024</td>
+                <td>Lazer</td>
+                <td>jogo</td>
+                <td>R$ 1000,00</td>
+
+            </tr>
+            
+           </tbody>
+
+         </table>
+
+       </section>
+
+
+    </main>
+</body>
+</html>
